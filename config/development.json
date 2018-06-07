@@ -1,9 +1,9 @@
 {
   "isDev": true,
   "server": {
-    "port": 443,
+    "port": 80,
     "/* secure */": "/* whether this connects via https */",
-    "secure": true,
+    "secure": false,
     "key": "cert/key.pem",
     "cert": "cert/cert.pem",
     "chain":"cert/chain.pem"
