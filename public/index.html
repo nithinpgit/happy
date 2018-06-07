@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Meeting</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/room-style.css?t=48">
+        <link rel="stylesheet" href="assets/css/alertify.core.css" />
+        <link rel="stylesheet" href="assets/css/alertify.default.css" id="toggleCSS" />
+    </head>
+    <body>
+    <!--  room name -->
+    <div class="content-wrapper">
+        <div class="invite-container" style="display: none;">
+            <h3 id="enter_room_id">Initiate a Meeting and invite up to 10 people</h3>
+            <div>
+                <input id="name_input" type="text" class="text-box name_inp" placeholder="Please enter your name" onfocus="this.placeholder=''" onblur="this.placeholder = 'Please enter your name'">
+                <input id="room_input" type="text" class="text-box" placeholder="Please enter meeting name" onfocus="this.placeholder=''" onblur="this.placeholder = 'Please enter meeting name'">
+                <button id="enter-butn" class="actn-btn">Start</button>
+            </div>
+        </div>
+    </div>    
+    <!-- end -->
+    <div class="content-wrapper">
+        <div id="layout" class="webcam-video">
+            <video id="localVideo"></video>
+        </div>
+        <!-- tool bar start -->
+        <div class="webcam-toolbox">
+            <span class="webcam-left">
+            <ul><!-- left side icon if needed --></ul>
+            </span>
+            <span class="webcam-right">
+            <ul class="webcam-active-menu hide-menu">
+               <li class="webcam-stop-videocam active-tool webcam-tooltip">
+                    <a href="javascript:void(0);"><img src="assets/img/camera-tools/video.svg" width="20"></a>
+                    <span class="webcam-tooltiptext">Video On/Off</span>
+                </li>
+                <li class="webcam-stop-microphone active-tool webcam-tooltip">
+                    <a href="javascript:void(0);"><img src="assets/img/camera-tools/mic.svg" width="20"></a>
+                    <span class="webcam-tooltiptext">Mic On/Off</span>
+                </li>
+                <li class="webcam-stop-audio active-tool webcam-tooltip">
+                    <a href="javascript:void(0);"><img src="assets/img/camera-tools/volume.svg" width="20"></a>
+                    <span class="webcam-tooltiptext">Audio On/Off</span>
+                </li>
+                
+                <li class="webcam-exit-room webcam-tooltip">
+                    <a href="javascript:void(0);"><img src="assets/img/camera-tools/exit.svg" width="20"></a>
+                    <span class="webcam-tooltiptext">Exit Room</span>
+                </li>
+            </ul>
+            </span>
+            <span class="webcam-end">
+            <ul class="chat-right"><!-- right side icon if needed --></ul>
+            </span>            
+        </div>
+        <!-- tool bar end -->
+    </div>     
+    <form style="width: 1px;height: 1px;opacity: 0;" id="chat_upload"
+      method="post" action="/upload"
+      enctype="data-ajax">
+      <input style="width: 1px;height: 1px;" id="uploadfile-file-chat" type="file" name="sampleFile" multiple /> 
+    </form>
+    </body>
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>  
+    <script src="assets/js/jquery.ui.widget.js"></script>
+    <script src="assets/js/jquery.fileupload.js"></script>
+    <script type="text/javascript" src="assets/js/layoutcontrol.min.js"></script>  
+    <script type="text/javascript" src="assets/js/layout.js"></script>  
+    <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+    <script src="assets/js/simplewebrtc.bundle.js"></script> 
+    <script type="text/javascript" src="assets/js/alertify.min.js"></script>
+    <script type="text/javascript" src="assets/js/notify.min.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+</html>
