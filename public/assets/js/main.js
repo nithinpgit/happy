@@ -23,7 +23,7 @@ var QueryString = function() {
    }
 }();
 /* configuraiton */
-var base_url = 'https://localhost/';
+var base_url = 'https://webrtc.happi.online/';
 var mode      = '0';
 /*configuration end */
 var room_name  =   '0';
