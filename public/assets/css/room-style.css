@@ -3,7 +3,7 @@
 /* Addon CSS Document for VideoConference App Chat Room Loaded in Video Container */
 
 /* Author : Tintu Sam  - tintu@enfintechnologies.com */
-body { background: url('../img/bg-green.png');background-size: cover; overflow: hidden; margin: 0px; padding: 0px; font-size: 14px; line-height: 20px; font-family: 'Open Sans', sans-serif; }
+body { background: url('../img/bg-green.jpg');background-size: cover; overflow: hidden; margin: 0px; padding: 0px; font-size: 14px; line-height: 20px; font-family: 'Open Sans', sans-serif; }
 .invite-container { z-index: 999999; color: #fff; padding: 20px 15px; width: 74%; left: 13%; position: absolute; box-sizing: border-box; height: 50%; top: 25%; text-align: center; }
 .invite-container .text-box { height: 34px; padding: 10px; box-sizing: border-box; border: none; }
 .h3 { font-size: 24px; }
