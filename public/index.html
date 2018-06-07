@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
-    
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Meeting</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-        <link rel="stylesheet" href="assets/css/room-style.css?t=48">
-        <link rel="stylesheet" href="assets/css/alertify.core.css" />
-        <link rel="stylesheet" href="assets/css/alertify.default.css" id="toggleCSS" />
-    </head>
-    <body>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Meeting</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/room-style.css?t=48">
+    <link rel="stylesheet" href="assets/css/alertify.core.css" />
+    <link rel="stylesheet" href="assets/css/alertify.default.css" id="toggleCSS" />
+</head>
+
+<body>
     <!--  room name -->
     <div class="content-wrapper">
         <div class="invite-container" style="display: none;">
@@ -23,7 +24,7 @@
                 <button id="enter-butn" class="actn-btn">Start</button>
             </div>
         </div>
-    </div>    
+    </div>
     <!-- end -->
     <div class="content-wrapper">
         <div id="layout" class="webcam-video">
@@ -39,43 +40,42 @@
                <li class="webcam-stop-videocam active-tool webcam-tooltip">
                     <a href="javascript:void(0);"><img src="assets/img/camera-tools/video.svg" width="20"></a>
                     <span class="webcam-tooltiptext">Video On/Off</span>
-                </li>
-                <li class="webcam-stop-microphone active-tool webcam-tooltip">
-                    <a href="javascript:void(0);"><img src="assets/img/camera-tools/mic.svg" width="20"></a>
-                    <span class="webcam-tooltiptext">Mic On/Off</span>
-                </li>
-                <li class="webcam-stop-audio active-tool webcam-tooltip">
-                    <a href="javascript:void(0);"><img src="assets/img/camera-tools/volume.svg" width="20"></a>
-                    <span class="webcam-tooltiptext">Audio On/Off</span>
-                </li>
-                
-                <li class="webcam-exit-room webcam-tooltip">
-                    <a href="javascript:void(0);"><img src="assets/img/camera-tools/exit.svg" width="20"></a>
-                    <span class="webcam-tooltiptext">Exit Room</span>
-                </li>
+            </li>
+            <li class="webcam-stop-microphone active-tool webcam-tooltip">
+                <a href="javascript:void(0);"><img src="assets/img/camera-tools/mic.svg" width="20"></a>
+                <span class="webcam-tooltiptext">Mic On/Off</span>
+            </li>
+            <li class="webcam-stop-audio active-tool webcam-tooltip">
+                <a href="javascript:void(0);"><img src="assets/img/camera-tools/volume.svg" width="20"></a>
+                <span class="webcam-tooltiptext">Audio On/Off</span>
+            </li>
+
+            <li class="webcam-exit-room webcam-tooltip">
+                <a href="javascript:void(0);"><img src="assets/img/camera-tools/exit.svg" width="20"></a>
+                <span class="webcam-tooltiptext">Exit Room</span>
+            </li>
             </ul>
             </span>
             <span class="webcam-end">
             <ul class="chat-right"><!-- right side icon if needed --></ul>
-            </span>            
+            </span>
         </div>
         <!-- tool bar end -->
-    </div>     
-    <form style="width: 1px;height: 1px;opacity: 0;" id="chat_upload"
-      method="post" action="/upload"
-      enctype="data-ajax">
-      <input style="width: 1px;height: 1px;" id="uploadfile-file-chat" type="file" name="sampleFile" multiple /> 
+    </div>
+    <form style="width: 1px;height: 1px;opacity: 0;" id="chat_upload" method="post" action="/upload" enctype="data-ajax">
+        <input style="width: 1px;height: 1px;" id="uploadfile-file-chat" type="file" name="sampleFile" multiple />
     </form>
-    </body>
-    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>  
-    <script src="assets/js/jquery.ui.widget.js"></script>
-    <script src="assets/js/jquery.fileupload.js"></script>
-    <script type="text/javascript" src="assets/js/layoutcontrol.min.js"></script>  
-    <script type="text/javascript" src="assets/js/layout.js"></script>  
-    <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
-    <script src="assets/js/simplewebrtc.bundle.js"></script> 
-    <script type="text/javascript" src="assets/js/alertify.min.js"></script>
-    <script type="text/javascript" src="assets/js/notify.min.js"></script>
-    <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
+<script src="assets/js/jquery.ui.widget.js"></script>
+<script src="assets/js/jquery.fileupload.js"></script>
+<script type="text/javascript" src="assets/js/layoutcontrol.min.js"></script>
+<script type="text/javascript" src="assets/js/layout.js"></script>
+<script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+<script src="assets/js/simplewebrtc.bundle.js"></script>
+<script type="text/javascript" src="assets/js/alertify.min.js"></script>
+<script type="text/javascript" src="assets/js/notify.min.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
+
 </html>
